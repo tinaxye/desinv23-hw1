@@ -7,10 +7,14 @@ function repeat(direction) {
 
 repeat(down);
 right;
+
 repeat(up);
 right;
+
 repeat(down);
 right;
+
 repeat(up);
 right;
+
 repeat(down);
