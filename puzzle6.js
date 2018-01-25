@@ -1,26 +1,28 @@
-right;
+function repeat(direction, max) {
+  var count = 0;
+  while (count < max) {
+    direction();
+    count = count + 1;
+  }
+}
+
+right();
 var firstColor = getColor();
 
 if (firstColor == "blue") {
-  down;
-  down;
-  down;
+  repeat(down, 3);
 } else {
-  up;
-  up;
-  up;
+  repeat(up, 3);
 }
 
 if (getColor() == "blue") {
-  right;
+  right();
 } else {
-  left;
+  left();
 }
 
 if (firstColor == "blue") {
-  down;
+  down();
 } else {
-  up;
+  up();
 }
-
-  
