@@ -1,20 +1,20 @@
 function repeat(direction) {
   while (getColor() != "red") {
-    direction;
+    direction();
   }
-  right;
+  right();
 }
 
 repeat(down);
-right;
+right();
 
 repeat(up);
-right;
+right();
 
 repeat(down);
-right;
+right();
 
 repeat(up);
-right;
+right();
 
 repeat(down);
