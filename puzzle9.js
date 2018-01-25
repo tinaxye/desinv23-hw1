@@ -1,12 +1,13 @@
-function repeat(direction, max) {
+function repeatSetColor(direction, color, max) {
   var count = 0;
   while (count < max) {
-    direction;
+    direction();
+    setColor(color);
     count = count + 1;
   }
 }
 
-repeat(down, 5);
-repeat(right, 9);
-repeat(up, 5);
-repeat(left, 9);
+repeatSetColor(down, "red", 50);
+repeatSetColor(right, "yellow", 90);
+repeatSetColor(up, "green", 50);
+repeatSetColor(left, "blue", 90);
