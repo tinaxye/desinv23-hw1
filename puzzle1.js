@@ -21,4 +21,4 @@ count = 0;
 while (count < 2) {
   right();
   count = count + 1;
- ]
+}
