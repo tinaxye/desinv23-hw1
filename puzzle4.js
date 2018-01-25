@@ -1,21 +1,20 @@
 function repeat(direction, max) {
   var count = 0;
   while (count < max) {
-    direction;
+    direction();
     count = count + 1;
   }
 }
 
 function changeAndCollect() {
-  right;
+  right();
   var myColor = getColor();
-  down;
-  right;
+  down();
   setColor(myColor);
-  right;
+  repeat(right, 2);
 }
 
 repeat(down, 4);
 changeAndCollect();
-up;
+up();
 changeAndCollect();
