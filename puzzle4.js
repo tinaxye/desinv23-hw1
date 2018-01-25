@@ -1,3 +1,13 @@
+function moveThroughObstacle() {
+  right();
+  right();
+  if (getColor() == "blue") {
+    down();
+  } else {
+    up();
+  }
+}
+
 function repeat(direction, max) {
   var count = 0;
   while (count < max) {
@@ -6,15 +16,9 @@ function repeat(direction, max) {
   }
 }
 
-function changeAndCollect() {
-  right();
-  var myColor = getColor();
-  down();
-  setColor(myColor);
-  repeat(right, 2);
+var count = 0;
+while (count < 3) {
+  moveThroughObstacle();
+  count = count + 1;
 }
-
-repeat(down, 4);
-changeAndCollect();
-up();
-changeAndCollect();
+repeat(right, 3);
