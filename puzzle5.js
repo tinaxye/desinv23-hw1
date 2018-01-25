@@ -1,10 +1,18 @@
 function moveThroughObstacle() {
-  right;
-  right;
-  if (getColor == "blue") {
-    down;
+  right();
+  right();
+  if (getColor() == "blue") {
+    down();
   } else {
-    up;
+    up();
+  }
+}
+
+function repeat(direction, max) {
+  var count = 0;
+  while (count < max) {
+    direction();
+    count = count + 1;
   }
 }
 
@@ -13,6 +21,4 @@ while (count < 3) {
   moveThroughObstacle();
   count = count + 1;
 }
-right;
-right;
-right;
+repeat(right, 3);
