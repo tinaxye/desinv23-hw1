@@ -1,7 +1,7 @@
 function repeat(direction, max) {
   var count = 0;
   while (count < max) {
-    direction;
+    direction();
     count = count + 1;
   }
 }
@@ -9,7 +9,7 @@ function repeat(direction, max) {
 repeat(down, 2);
 var myColor = getColor();
 repeat(down, 3);
-repeat(right, 3);
+repeat(right, 2);
 setColor(myColor);
-right;
-up;
+repeat(right, 2);
+up();
