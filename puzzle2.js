@@ -1,7 +1,7 @@
 function repeat(direction, max) {
   var count = 0;
   while (count < max) {
-    direction;
+    direction();
     count = count + 1;
   }
 }
